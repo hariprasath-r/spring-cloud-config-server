@@ -1,0 +1,12 @@
+# normal convention with spring cloud config server is to use port 8888
+server:
+  port: 8888
+
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:\\C:\Users\Haripr\git\spring-config-repo
