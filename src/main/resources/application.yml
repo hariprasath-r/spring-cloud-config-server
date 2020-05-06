@@ -5,8 +5,4 @@ server:
 spring:
   application:
     name: spring-cloud-config-server
-  cloud:
-    config:
-      server:
-        git:
-          uri: file:\\C:\Users\Haripr\git\spring-config-repo
+  cloud.config.server.git.uri: file:\\C:\Users\Haripr\git\spring-cloud-config-repo
