@@ -5,19 +5,9 @@ server:
 spring:
   application:
     name: spring-cloud-config-server
+  profiles:
+    active: default
   cloud:
-    config.server.git.uri: https://github.com/hariprasath-r/spring-cloud-config-repo.git
-#    below key can also be used to toggle discovery client
-    discovery.enabled: true
-
-eureka:
-  client:
-    enabled: true
-    register-with-eureka: true
-    fetch-registry: true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka
-  instance:
-    hostname: ${spring.application.name}
-    # registers with ip address instead of hostname
-    preferIpAddress: false
+    config.server.git.uri: file://C:/Users/Haripr/git/spring-cloud-config-repo
+#    below key can also be used to toggle discovery client, moving to config first
+#    discovery.enabled: true
