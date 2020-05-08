@@ -1,9 +1,9 @@
 # normal convention with spring cloud config server is to use port 8888
 server:
-  port: 8899
+  port: 8888
 
 spring:
   cloud:
-    config.server.git.uri: file://C:/Users/Haripr/git/spring-cloud-config-repo
+    config.server.git.uri: https://github.com/hariprasath-r/spring-cloud-config-repo.git
 #    below key can also be used to toggle discovery client, moving to config first
 #    discovery.enabled: true
