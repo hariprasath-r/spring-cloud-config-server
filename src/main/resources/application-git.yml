@@ -4,6 +4,10 @@ server:
 
 spring:
   cloud:
-    config.server.git.uri: https://github.com/hariprasath-r/spring-cloud-config-repo.git
+    config.server:
+      git:
+        uri: https://github.com/hariprasath-r/spring-cloud-config-repo.git
+        clone-on-start: true
+#        search-paths: local
 #    below key can also be used to toggle discovery client, moving to config first
 #    discovery.enabled: true
