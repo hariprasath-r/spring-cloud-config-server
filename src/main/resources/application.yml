@@ -6,7 +6,7 @@ spring:
   cloud:
     config.server:
       git:
-        uri: file://C:/Users/Haripr/git/spring-cloud-config-repo
+        uri: file://C:/_workspace/TMDB/spring-cloud-config-repo
         clone-on-start: true
 #        search-paths: local
 #    below key can also be used to toggle discovery client, moving to config first
