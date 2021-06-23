@@ -7,7 +7,7 @@ spring:
     config.server:
       git:
         uri: file://C:/_workspace/TMDB/spring-cloud-config-repo
-        clone-on-start: true
-#        search-paths: local
+        clone-on-start: false
+        search-paths: '{application}'
 #    below key can also be used to toggle discovery client, moving to config first
 #    discovery.enabled: true
