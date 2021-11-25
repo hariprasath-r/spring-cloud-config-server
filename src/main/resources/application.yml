@@ -4,6 +4,7 @@ server:
 
 spring:
   cloud:
+    bus.enabled: false
     config.server:
       git:
         uri: file://C:/_workspace/TMDB/spring-cloud-config-repo
